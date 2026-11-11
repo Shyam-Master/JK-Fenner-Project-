@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import fr from "./locales/fr";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 // Temporary Dealer and Enquiry URLs
 const DEALER_URL = "https://example.com/dealer";
 const ENQUIRY_URL = "https://example.com/enquiry";
